@@ -1,0 +1,50 @@
+<%- include("partials/header") -%>
+
+    <section id="cover-title">
+      <div class="title-banner">
+        <section class="py-5 text-center container">
+          <div class="row py-lg-5">
+            <div class="title-content col-lg-6 col-md-8 mx-auto">
+
+              <h1 class="fw-light">
+                The weather in <%= query %> is currently
+                <strong><%= weatherDescription %></strong>
+              </h1>
+              <p class="title-content-small lead text-muted">
+                The weather in <strong><%= query %></strong> is
+                <strong><%= temp %></strong> degrees celcius.
+              </p>
+
+              <form action="/" method="post">
+                <label for="cityInput">Search for a city</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  list="examples"
+                  id="cityInput"
+                  type="text"
+                  name="cityName"
+                  autocomplete="off"
+                />
+
+                <datalist id="examples">
+                  <option>Paris</option>
+                  <option>New York City</option>
+                  <option>London</option>
+                  <option>Bangkok</option>
+                  <option>Hong Kong</option>
+                  <option>Dubai</option>
+                  <option>Singapore</option>
+                  <option>Rome</option>
+                </datalist>
+                <button type="submit" class="custom-button" role="button">
+                  Go
+                </button>
+              </form>
+            </div>
+          </div>
+        </section>
+      </div>
+    </section>
+
+<%- include("partials/footer"); -%>

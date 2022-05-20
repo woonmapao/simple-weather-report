@@ -1,0 +1,26 @@
+<%- include("partials/header") -%>
+
+    <div class="container px-4 py-5" id="top-city">
+        <h2 class="pb-2 border-bottom">London is currently at <%= temp %>°C<br></h2>
+        <small>The weather is <%= weatherDescription %></small>
+        <div class="row g-4 py-5 row-cols-1 row-cols-lg-1">
+            <div class="feature col">
+                <img class="img-fluid" src="images/Paris.jpg" alt="">
+                <h2><br>London, England</h2>
+                <p>
+                    There is never a lack of intrigue or interest in London as a destination which is makes it 
+                    one of the most touristic cities in the world. The Royal intrigue is one of its main draws, 
+                    as thousands of tourists descend on Buckingham Palace to get a brush with the British monarchy.<br><br>
+                    Millions of tourists visit London each year and tour the top attractions, like the Tower of London, 
+                    Westminster Abbey, and St. Paul's Cathedral. Part of what makes London such a treat to visit is 
+                    its public transport system, which makes it easy to get from one place to another without a car. 
+                    With so much to see, it is easy to stay mobile in London to visit poplar landmarks in a single day, 
+                    like the Tower Bridge and the Skydeck at The Shard 800 feet above the city .<br><br>
+                    London is also revered for its neighborhoods and famous markets, like the Borough Market, 
+                    operating since the 13th century, and the Camden Market, with small vendor stalls selling food and local goods.
+                </p>
+            </div>
+        </div>
+    </div>
+
+<%- include("partials/footer"); -%>
